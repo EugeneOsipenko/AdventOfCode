@@ -5,9 +5,6 @@ import java.io.FileInputStream
 import java.io.FileNotFoundException
 import java.io.InputStreamReader
 
-/**
- * Created by eugeneosipenko on 19.12.16.
- */
 fun loadInputAsLineList(filename: String, filepath: String) : List<String> {
     val inputFile: File
     when {
@@ -35,11 +32,10 @@ fun loadInputAsLines(filename: String, filepath: String) : String {
 
     val fis = FileInputStream(inputFile).buffered()
     var lines = ""
-    try {
+
+    fis.use { fis ->
         val isr = InputStreamReader(fis)
         isr.readLines().forEach { lines += it }
-    } finally {
-        fis.close()
     }
     return lines
 }

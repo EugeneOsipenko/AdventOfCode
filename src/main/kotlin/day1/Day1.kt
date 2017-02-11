@@ -1,30 +1,42 @@
 package day1
 
 fun main(args: Array<String>) {
-    partOne()
-    partTwo()
+    val solution = Day1()
+    solution.partOne()
+    solution.partTwo()
 }
 
-private fun partOne() {
-    val result = INPUT.toCharArray().map(::floor).sum()
-    println(result)
-}
+class Day1 {
 
-private fun partTwo() {
-    val result = INPUT.toCharArray().findFirstNegativeFloorIndex() + 1
-    println(result)
-}
-
-private fun floor(c: Char): Int = if (c == '(') 1 else -1
-
-private fun CharArray.findFirstNegativeFloorIndex(): Int {
-    var currentFloor = 0
-    forEachIndexed { i, c ->
-        currentFloor += floor(c)
-        if (currentFloor < 0) return i
+    fun main(args: Array<String>) {
+        partOne()
+        partTwo()
     }
 
-    throw IllegalStateException("Santa never goes under 0 floor")
+    fun partOne() {
+        val result = INPUT.toCharArray().map { floor(it) }.sum()
+        println(result)
+    }
+
+    fun partTwo() {
+        val result = INPUT.toCharArray().findFirstNegativeFloorIndex() + 1
+        println(result)
+    }
+
+    fun floor(c: Char): Int = if (c == '(') 1 else -1
+
+    fun CharArray.findFirstNegativeFloorIndex(): Int {
+        var currentFloor = 0
+        forEachIndexed { i, c ->
+            currentFloor += floor(c)
+            if (currentFloor < 0) return i
+        }
+
+        throw IllegalStateException("Santa never goes under 0 floor")
+    }
 }
+
+
+
 
 
