@@ -4,7 +4,7 @@ import java.security.MessageDigest
 import javax.xml.bind.annotation.adapters.HexBinaryAdapter
 
 /**
- * http://adventofcode.com/2015/day/4
+ * http://adventofcode.com/year_2015/day/4
  */
 fun main(args: Array<String>) {
     val solution = Day4()

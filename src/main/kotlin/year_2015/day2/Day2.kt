@@ -3,7 +3,7 @@ package day2
 import util.loadInputAsLineList
 
 /**
- * http://adventofcode.com/2015/day/2
+ * http://adventofcode.com/year_2015/day/2
  */
 fun main(args: Array<String>) {
     val solution = Day2()

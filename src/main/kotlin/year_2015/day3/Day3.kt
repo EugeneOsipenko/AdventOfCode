@@ -5,7 +5,7 @@ import util.loadInputAsLines
 import java.util.*
 
 /**
- * http://adventofcode.com/2015/day/3
+ * http://adventofcode.com/year_2015/day/3
  */
 fun main(args: Array<String>) {
     val solution = Day3()
