@@ -1,6 +1,6 @@
-package day2
+package year_2015.day2
 
-import util.loadInputAsLineList
+import year_2015.util.loadInputAsLineList
 
 /**
  * http://adventofcode.com/year_2015/day/2

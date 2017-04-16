@@ -1,6 +1,6 @@
-package day5
+package year_2015.day5
 
-import util.loadInputAsLineList
+import year_2015.util.loadInputAsLineList
 import java.util.regex.Pattern
 
 fun main(args: Array<String>) {

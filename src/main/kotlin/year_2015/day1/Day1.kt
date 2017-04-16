@@ -1,4 +1,4 @@
-package day1
+package year_2015.day1
 
 fun main(args: Array<String>) {
     val solution = Day1()
@@ -25,7 +25,7 @@ class Day1 {
 
     fun floor(c: Char): Int = if (c == '(') 1 else -1
 
-    fun CharArray.findFirstNegativeFloorIndex(): Int {
+    private fun CharArray.findFirstNegativeFloorIndex(): Int {
         var currentFloor = 0
         forEachIndexed { i, c ->
             currentFloor += floor(c)

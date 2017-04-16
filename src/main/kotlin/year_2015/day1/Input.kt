@@ -1,4 +1,4 @@
-package day1
+package year_2015.day1
 
 /**
  * http://adventofcode.com/year_2015/day/1

@@ -1,4 +1,4 @@
-package day4
+package year_2015.day4
 
 import java.security.MessageDigest
 import javax.xml.bind.annotation.adapters.HexBinaryAdapter

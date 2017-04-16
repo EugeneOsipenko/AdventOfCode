@@ -1,7 +1,7 @@
-package day3
+package year_2015.day3
 
 
-import util.loadInputAsLines
+import year_2015.util.loadInputAsLines
 import java.util.*
 
 /**
@@ -50,7 +50,7 @@ class Day3 {
         println(santaPoints.size)
     }
 
-    fun convertPath(c: Char): Point = when (c) {
+    private fun convertPath(c: Char): Point = when (c) {
         '^' -> Point(0, 1)
         'v' -> Point(0, -1)
         '<' -> Point(-1, 0)
@@ -58,7 +58,7 @@ class Day3 {
         else -> throw IllegalStateException("Unknown direction")
     }
 
-    data class Point(val x: Int, val y: Int) {
+    private data class Point(val x: Int, val y: Int) {
         operator fun plus(p: Point): Point = Point(x + p.x, y + p.y)
     }
 

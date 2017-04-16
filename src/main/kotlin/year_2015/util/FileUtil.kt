@@ -1,4 +1,4 @@
-package util
+package year_2015.util
 
 import java.io.File
 import java.io.FileInputStream
@@ -14,11 +14,9 @@ fun loadInputAsLineList(filename: String, filepath: String) : List<String> {
     }
 
     val fis = FileInputStream(inputFile).buffered()
-    try {
+    fis.use { fis ->
         val isr = InputStreamReader(fis)
         return isr.readLines()
-    } finally {
-        fis.close()
     }
 }
 
