@@ -24,7 +24,7 @@ class Day3 {
     }
 
     fun partTwo() {
-        val result = getInput().mapGrouped(3) { f, s, t ->
+        val result = getInput().mapGrouped { f, s, t ->
             fun isT(part: IntRange): Int {
                 val a = f.substring(part).trim().toInt()
                 val b = s.substring(part).trim().toInt()

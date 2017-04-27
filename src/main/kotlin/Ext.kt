@@ -14,9 +14,9 @@ inline fun <R> CharSequence.mapReduce(prev: R, operation: (R, Char) -> R): R {
     return accumulator
 }
 
-inline fun <T, R> List<T>.mapGrouped(groupCount: Int, transform: (f: T, s: T, t: T) -> R): List<R> {
+inline fun <T, R> List<T>.mapGrouped(transform: (f: T, s: T, t: T) -> R): List<R> {
     if (isEmpty()) throw UnsupportedOperationException("Empty list can't be mapGrouped.")
-    if (size % groupCount != 0) throw UnsupportedOperationException("The size of the list must be a multiple of the groupCount.")
+    if (size % 3 != 0) throw UnsupportedOperationException("The size of the list must be a multiple of 3.")
 
     val result = ArrayList<R>()
     var index = 0
