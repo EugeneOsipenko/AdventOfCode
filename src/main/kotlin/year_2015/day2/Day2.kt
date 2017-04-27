@@ -1,6 +1,6 @@
 package year_2015.day2
 
-import year_2015.util.loadInputAsLineList
+import loadInputAsLineList
 
 /**
  * http://adventofcode.com/year_2015/day/2
@@ -46,7 +46,7 @@ class Day2 {
 
     fun getInput(): List<String> {
         val filename = "day2.input"
-        val filepath = "src/main/kotlin/day2/" + filename
+        val filepath = "src/main/kotlin/year_2015/day2/" + filename
         return loadInputAsLineList(filename, filepath)
     }
 }

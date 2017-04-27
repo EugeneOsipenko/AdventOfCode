@@ -1,7 +1,7 @@
 package year_2015.day3
 
 
-import year_2015.util.loadInputAsLines
+import loadInputAsLines
 import java.util.*
 
 /**
@@ -64,7 +64,7 @@ class Day3 {
 
     fun getInput(): String {
         val filename = "day3.input"
-        val filepath = "src/main/kotlin/day3/" + filename
+        val filepath = "src/main/kotlin/year_2015/day3/" + filename
         return loadInputAsLines(filename, filepath)
     }
 }

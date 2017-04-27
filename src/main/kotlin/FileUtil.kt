@@ -1,5 +1,3 @@
-package year_2015.util
-
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileNotFoundException

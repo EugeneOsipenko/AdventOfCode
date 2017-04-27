@@ -1,6 +1,6 @@
 package year_2015.day5
 
-import year_2015.util.loadInputAsLineList
+import loadInputAsLineList
 import java.util.regex.Pattern
 
 fun main(args: Array<String>) {
@@ -77,7 +77,7 @@ class Day5 {
 
     fun getInput(): List<String> {
         val fileName = "day5.input"
-        val filePath = "src/main/kotlin/day5/" + fileName
+        val filePath = "src/main/kotlin/year_2015/day5/" + fileName
         return loadInputAsLineList(fileName, filePath)
     }
 }
