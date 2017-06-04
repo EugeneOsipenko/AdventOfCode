@@ -24,3 +24,5 @@ inline fun <T, R> List<T>.mapGrouped(transform: (f: T, s: T, t: T) -> R): List<R
     while (index < size) result.add(transform(this[index++], this[index++], this[index++]))
     return result
 }
+
+inline fun String.ordered() = map { it.toString() }.toList().sorted().reduce { acc, s -> acc + s }
